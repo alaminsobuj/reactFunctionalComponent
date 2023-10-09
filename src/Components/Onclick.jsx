@@ -1,13 +1,14 @@
 import React from 'react'
 
 export default function Onclick() {
-    const Onclick=(parameter)=>{
-        console.log(parameter);
 
-    }
+        const onclickfunction=(a,b)=>{
+            console.log(a);
+            console.log(b.type);
+        }
   return (
     <div>
-        <button style={{backgroundColor:'green',borderColor:'#000',borderRadius:"10px",padding:"10px 12px"}} onClick={() => Onclick('dfgsdfg')} >Onclick</button>
+        <button style={{backgroundColor:'green',borderColor:'#000',borderRadius:"10px",padding:"10px 12px"}} onClick={(event) => onclickfunction('dfgsdfg',event)} >Onclick</button>
     </div>
   )
 }

@@ -3,6 +3,9 @@ import './App.css';
 import HelloWord from './Components/HelloWord';
 import Onclick from './Components/Onclick';
 import Counter from './Components/Counter';
+import Conditional from './Components/Conditional';
+import ListShow from './Components/ListShow';
+import FromView from './Components/FromView';
 
 function Car(props) {
   return (
@@ -19,6 +22,9 @@ function App() {
        <Counter />
        <Onclick />
       <HelloWord />
+      <Conditional isGoal={true} />
+      <ListShow />
+      <FromView />
     </>
   );
 }
